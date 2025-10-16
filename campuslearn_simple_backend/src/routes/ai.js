@@ -8,7 +8,7 @@ const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
 
 async function getFAQs() {
-  const res = await fetch("http://localhost:5000/api/faqs");
+  const res = await fetch("https://campuslearnprojectch.onrender.com/api/faqs");
   return await res.json();
 }
 
