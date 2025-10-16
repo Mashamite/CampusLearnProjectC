@@ -2,7 +2,7 @@ import emailjs from '@emailjs/browser';
 
 export async function lookupFAQ(message) {
   try {
-    const res = await fetch('http://localhost:5000/api/faqs');
+    const res = await fetch('https://campuslearnprojectc.onrender.com/api/faqs');
     const faqs = await res.json();
     const text = message.toLowerCase();
 
@@ -24,7 +24,7 @@ export async function lookupFAQ(message) {
 
 export async function queryAI(message) {
   try {
-    const res = await fetch("http://localhost:5000/api/ai/chat", {
+    const res = await fetch("https://campuslearnprojectc.onrender.com/api/ai/chat", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ message }),
@@ -39,7 +39,7 @@ export async function queryAI(message) {
 
 export async function getTutorsForModule(code) {
   try {
-    const res = await fetch(`http://localhost:5000/api/tutors/module/${encodeURIComponent(code)}`);
+    const res = await fetch(`https://campuslearnprojectc.onrender.com/api/tutors/module/${encodeURIComponent(code)}`);
     const data = await res.json();
     return data.tutors || [];
   } catch (e) {
