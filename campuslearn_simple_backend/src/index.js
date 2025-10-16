@@ -17,7 +17,7 @@ const faqRoutes = require('./routes/faqs')
 
 const app = express()
 const PORT = process.env.PORT || 5000
-const FRONTEND = process.env.FRONTEND_ORIGIN || 'http://localhost:5173'
+const FRONTEND = process.env.FRONTEND_ORIGIN || 'https://campuslearnprojectch.onrender.com'
 
 app.use(cors({ origin: FRONTEND }))
 app.use(express.json())
