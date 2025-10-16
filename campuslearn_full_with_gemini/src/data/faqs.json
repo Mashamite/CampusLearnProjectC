@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "keywords": [
+      "enroll",
+      "enrol",
+      "enrollment"
+    ],
+    "question": "How do I enroll in a course?",
+    "answer": "Log in, go to Courses and click Enroll."
+  },
+  {
+    "id": 2,
+    "keywords": [
+      "password",
+      "forgot",
+      "login"
+    ],
+    "question": "I forgot my password",
+    "answer": "Use the 'Forgot password' link on the sign-in page."
+  },
+  {
+    "id": 3,
+    "keywords": [
+      "materials",
+      "notes",
+      "resources"
+    ],
+    "question": "Where can I find learning materials?",
+    "answer": "Materials are attached to topics; check the Topic page."
+  }
+]

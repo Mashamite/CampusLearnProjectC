@@ -1,0 +1,20 @@
+{
+  "name": "campuslearn",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "start": "vite"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^3.2.0",
+    "@vitejs/plugin-react": "^5.0.4",
+    "axios": "^1.12.2",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^7.9.4"
+  },
+  "devDependencies": {
+    "vite": "^7.1.10"
+  }
+}
