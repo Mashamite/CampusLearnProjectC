@@ -5,7 +5,7 @@ import { useAuth } from '../utils/auth';
 export default function Chatbot() {
   const [open, setOpen] = useState(false);
   const [messages, setMessages] = useState([
-    { sender: 'bot', text: "Hi — I'm CampusLearn Assistant. Ask about modules, topics, or accounts.", source: 'bot' }
+    { sender: 'bot', text: "Hi, I'm CampusLearn Assistant. Ask about modules, topics, or accounts.", source: 'bot' }
   ]);
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
