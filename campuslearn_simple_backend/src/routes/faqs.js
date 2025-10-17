@@ -5,16 +5,15 @@ require('dotenv').config();
 const router = express.Router();
 
 const pool = new Pool({
-  user: process.env.PGUSER,
-  host: process.env.PGHOST,
-  database: process.env.PGDATABASE,
-  password: process.env.PGPASSWORD,
-  port: process.env.PGPORT,
+  connectionString: process.env.DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false, 
+  },
 });
 
 router.get('/', async (req, res) => {
   try {
-    const result = await pool.query('SELECT * FROM FAQs');
+    const result = await pool.query('SELECT * FROM faqs');
     res.json(result.rows);
   } catch (err) {
     console.error('Error fetching FAQs:', err);
